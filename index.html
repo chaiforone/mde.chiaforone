@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta content="email=no" name="format-detection" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <title>Chai-ForOne web-keybaord markdown Demo</title>
+    <link rel="stylesheet" href="css/forone.css">
+    <link rel="stylesheet" href="css/chai.css">
+    <link rel="shortcut icon" href="#" />
+    <!-- <script src="js/foronedemo.js"></script> -->
+    <script src="js/forone.md.js"></script>
+</head>
+
+<body>
+    <!-- begin forone menu -->
+    <nav id="chainavmenu" style="position:absolute;top:0;">
+        <div id="chaimenu">
+            <a href="https://caixnet.github.io">
+                <b>&nbsp;Forone&nbsp; </b>
+            </a>
+            <a href="forone.html">
+                <b>&nbsp;Demo&nbsp;</b>
+            </a>
+            <a href="foroneditor.html" class="currentnav">
+                <b>&nbsp;Editor&nbsp;</b>
+            </a>
+            <a href="foronehelp.html">
+                <b>&nbsp;Help&nbsp;</b>
+            </a>
+            <a href="foroneabout.html">
+                <b>&nbsp;About&nbsp;</b>
+            </a>
+        </div>
+    </nav>
+    <!-- end forone menu -->
+
+    <!-- begin chai forone keyboard -->
+    <div id="chai41keyboard" running="true"> </div>
+    <!-- end chai forone keyboard -->
+
+    <!-- begin chai forone input area -->
+    <div id="chaiHTMLzone" style="position:relative;top:25px; width:100%;;height:200px;padding:10px;">
+        <button id="chaiHTMLlabel" style="position:relative;">chaiHTMLtext</button>
+        <textarea id="chaiHTMLtext" rows="10" calss="chaiText" style="font-family:Arial,Calibri,serif; background-color:moccasin; float:left;width:inherit;height:inherit;font-size:22px;overflow-y:scroll;"></textarea>
+    </div>
+
+    <!-- end chai forone input area -->
+    <!-- begin chai forone input area -->
+    <div id="chaiCSSzone" style="display:none; position:relative;top:25px; width:100%;;height:100px;padding:10px;">
+        <button id="chaiCSSlabel" style="position:relative;">chaiCSStebuttonxt</button>
+        <textarea id="chaiCSStext" rows="5" calss="chaiText" style="font-family:Arial,Calibri,serif;background-color:rgb(142, 199, 245); float:left;width:inherit;height:inherit;font-size:22px;overflow-y:scroll;"></textarea>
+    </div>
+
+    <!-- end chai forone input area -->
+    <!-- begin chai forone input area -->
+    <div id="chaiJSzone" style="display:none; position:relative;top:25px; width:100%;;height:100px;padding:10px;">
+        <button id="chaiJSlabel" style="position:relative;">chaiJStext</button>
+        <!-- <iframe id="iframetext" style="width:inherit;height:inherit;" scrolling="no" sandbox="allow-scripts allow-same-origin" src="http://www.bing.com" style="display: block;"></iframe> -->
+        <textarea id="chaiJStext" rows="5" calss="chaiText" style="font-family:Arial,Calibri,serif;background-color:aquamarine; float:left;width:inherit;height:inherit;font-size:22px;overflow-y:scroll;"></textarea>
+    </div>
+
+    <!-- end chai forone input area -->
+     <!-- begin chai forone input area -->
+     <div id="chaiMDzone" style="display:block; position:relative;top:25px; width:100%;;height:100px;padding:10px;">
+            <button id="chaiMDlabel" style="position:relative;" onclick="forone.triaMD.markDown();">chaiMDtext</button>
+            <label  id="chaiMDtext">aaa</label>
+            <!-- <iframe id="chaiMDtext" scrolling="no" sandbox="allow-scripts allow-same-origin  allow-popups allow-popups-to-escape-sandbox" src="./demo2.html" style="display: block;"></iframe> -->
+            <!-- <textarea id="chaiMDtext" rows="5" calss="chaiText" style="font-family:Arial,Calibri,serif;background-color:aquamarine; float:left;width:inherit;height:inherit;font-size:22px;overflow-y:scroll;"></textarea> -->
+    </div>
+    
+        <!-- end chai forone input area -->
+    <!-- begin chai forone input area -->
+    <div id="chaiRDzone" style="display:none; position:relative;top:25px; width:100%;;height:200px;padding:10px;">
+        <button id="chaiFRMlabel" style="position:relative;">chaiFRMtext</button>
+        <iframe id="chaiFRMtext" scrolling="no" sandbox="allow-scripts allow-same-origin  allow-popups allow-popups-to-escape-sandbox"
+            src="./demo2.html" style="display: block;"></iframe>
+        <!-- <textarea id="chaiFRMtext" rows="5" calss="chaiText" style="float:left;width:inherit;height:inherit;font-size:22px;overflow-y:scroll;"></textarea> -->
+        <!-- <iframe id="chaiFRMcss" scrolling="no" sandbox="allow-scripts allow-same-origin  allow-popups allow-popups-to-escape-sandbox" src="./demo2.css" style="display: none;"></iframe>
+        <iframe id="chaiFRMjs" scrolling="no" sandbox="allow-scripts allow-same-origin  allow-popups allow-popups-to-escape-sandbox" src="./demo2.js" style="display: none;"></iframe> -->
+        <form>
+            <!-- <input id="formText" type="text" name="formText" value="text"> -->
+            <!-- <input id="password" type="password" name="formPassword" value="password"> -->
+            <input id="btn" type="button" name="formbun" value="1" onclick="forone.testme()">
+            <script>
+            </script>
+        </form>
+        <!-- send mail -->
+        <input type="textarea" id="email" name="name" required style="width:100%;height:50px;">
+        <form method="post" action="">
+                
+                <input type="button" value="Send Email" onclick="send()"/>
+            </form>
+            <script type="text/javascript">
+              function send() {
+                var link = 'mailto:caixnetl@outlook.com?subject=Message from '
+                + document.getElementById('chaiFRMtext').contentDocument.documentElement.outerHTML;
+
+                window.location.href = link;
+            }
+        </script>
+        <!-- send mail -->
+    </div>
+
+
+    <!-- end chai forone input area -->
+    <div style="position: fixed; bottom:0;">
+        <p id="msg">test</p>
+    </div>
+    <!-- end chai forone body -->
+</body>
+<script>
+
+</script>
+
+</html>
